@@ -9,7 +9,8 @@ gotamer/conv
  * int    to string
  * uint   to string
  * byte   to string 
- * byte   to int 
+ * byte   to int
+ * ...
 
 Docs are here:
 http://go.pkgdoc.org/github.com/gotamer/conv
