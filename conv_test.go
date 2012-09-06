@@ -19,8 +19,10 @@ func TestChar(t *testing.T) {
 }
 
 func TestS2b(t *testing.T) {
-	b := S2bl("test string")
-	println("S2b: ", b)
+	text := "Test String: test string"
+	println(text)
+	b := S2bl(text)
+	println("S2bl: ", b)
 	s := Bl2s(b)
 	println("Bl2s: ", s)
 }
