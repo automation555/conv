@@ -4,8 +4,10 @@
 // string to int 
 // byte   to string 
 // byte   to int
+// int    to string
+// ...
 
-package char
+package conv
 
 import "strconv"
 
@@ -37,6 +39,34 @@ func (c *Char) GetString() string {
 // Returns an Int representation
 func (c *Char) GetInt() int {
 	return int(c.b)
+}
+
+// Converts byte to string
+func B2s(s byte) string {
+	b := NewByte(s)
+	return b.GetString()
+}
+
+// Converts a []byte list to string
+func Bl2s(bl []byte) string {
+	var out string
+	for i := 0; i < len(bl); i++ {
+		cb := NewByte(bl[i])
+		s := cb.GetString()
+		out += s
+	}
+	return out
+}
+
+// Converts a string to []byte 
+func S2bl(t string) []byte {
+	var out []byte
+	for i := 0; i < len(t); i++ {
+		cb := NewByte(t[i])
+		b := cb.GetByte()
+		out = append(out, b)
+	}
+	return out
 }
 
 // Doesn't work, returns the UTF-8 representation of the string in int

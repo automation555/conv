@@ -1,4 +1,4 @@
-package char
+package conv
 
 import "testing"
 
@@ -16,4 +16,11 @@ func TestChar(t *testing.T) {
 		in = cb.GetInt()
 		print(b, "\t", c, "\t", in, "\n")
 	}
+}
+
+func TestS2b(t *testing.T) {
+	b := S2bl("test string")
+	println("S2b: ", b)
+	s := Bl2s(b)
+	println("Bl2s: ", s)
 }

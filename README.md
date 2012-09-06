@@ -10,6 +10,8 @@ gotamer/conv
  * uint   to string
  * byte   to string 
  * byte   to int
+ * []byte to string 
+ * string to []byte 
  * ...
 
 Docs are here:
