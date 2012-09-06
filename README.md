@@ -1,11 +1,11 @@
 gotamer/conv
-====
+============
 
 ####Converts from 
 
  * string to byte 
  * string to int 
- * string 20 uint
+ * string to uint
  * int    to string
  * uint   to string
  * byte   to string 
