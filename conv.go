@@ -1,17 +1,20 @@
 // Copyright 2012 RoboTamer. All rights reserved.
 // Use of this source code is governed by a BSD-style license.
 
-package conv
-
 // Converts characters from 
-//
-// character to byte 
-// string to []byte 
-// string to int 
-// []byte to string 
-// byte   to int
-// int    to string
-// ...
+/***************************************************
+
+character to byte 
+string to []byte 
+string to int 
+[]byte to string 
+byte   to int
+int    to string
+...
+
+*****************************************************/
+
+package conv
 
 import "strconv"
 
