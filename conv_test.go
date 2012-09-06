@@ -18,7 +18,16 @@ func TestChar(t *testing.T) {
 	}
 }
 
-func TestS2b(t *testing.T) {
+func TestC2b(t *testing.T) {
+	char := "T"
+	println(char)
+	b := C2b(char)
+	println("S2b: ", b)
+	s := B2c(b)
+	println("B2s: ", s)
+}
+
+func TestS2bl(t *testing.T) {
 	text := "Test String: test string"
 	println(text)
 	b := S2bl(text)

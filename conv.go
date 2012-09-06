@@ -41,10 +41,15 @@ func (c *Char) GetInt() int {
 	return int(c.b)
 }
 
-// Converts byte to string
-func B2s(s byte) string {
-	b := NewByte(s)
-	return b.GetString()
+// Converts byte to character
+func B2c(s byte) string {
+	return string(s)
+}
+
+// Converts a character to a byte 
+func C2b(c string) byte {
+	b := NewString(c)
+	return b.GetByte()
 }
 
 // Converts a []byte list to string
