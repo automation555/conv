@@ -1,8 +1,11 @@
-// gotamer/conv converts between byte string int uint []byte ...
-
 // Copyright 2012 RoboTamer. All rights reserved.
 // Use of this source code is governed by a BSD-style license.
+
+// gotamer/conv converts between byte string int uint []byte ...
+
 package conv
+
+import "strconv"
 
 // Converts characters from 
 /***************************************************
@@ -16,8 +19,6 @@ int    to string
 ...
 
 *****************************************************/
-
-import "strconv"
 
 type Char struct {
 	b byte
