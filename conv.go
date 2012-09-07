@@ -1,6 +1,3 @@
-// Copyright 2012 RoboTamer. All rights reserved.
-// Use of this source code is governed by a BSD-style license.
-
 // gotamer/conv converts between byte string int uint []byte ...
 
 package conv
@@ -86,3 +83,6 @@ func (c *Char) GetString() string {
 func (c *Char) GetInt() int {
 	return int(c.b)
 }
+
+// Copyright 2012 RoboTamer. All rights reserved.
+// Use of this source code is governed by a BSD-style license.
